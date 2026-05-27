@@ -1,0 +1,30 @@
+.overlay { position:fixed; inset:0; background:rgba(0,0,0,.82); display:flex; align-items:center; justify-content:center; z-index:1000; backdrop-filter:blur(8px); animation:fadeIn .2s ease; }
+.card { background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:36px 32px; width:100%; max-width:400px; display:flex; flex-direction:column; align-items:center; gap:6px; box-shadow:0 24px 60px rgba(0,0,0,.7); animation:slideUp .3s ease; }
+.logo { font-family:'DM Serif Display',serif; font-size:24px; color:var(--accent); }
+.logo span { color:var(--text); font-style:italic; }
+.subtitle { font-size:13px; color:var(--text2); margin-bottom:6px; }
+
+.tabs { display:flex; gap:0; background:var(--bg); border-radius:8px; padding:3px; width:100%; margin-bottom:6px; }
+.tab { flex:1; padding:7px; border:none; background:transparent; color:var(--text2); font-size:13px; font-weight:500; border-radius:6px; transition:all .15s; font-family:'DM Sans',sans-serif; }
+.tab:hover { color:var(--text); }
+.tabOn { background:var(--surface2)!important; color:var(--text)!important; }
+
+.contextLine { font-size:12px; color:var(--text2); text-align:center; line-height:1.6; margin-bottom:4px; width:100%; }
+.switchLink { background:none; border:none; color:var(--accent); font-size:12px; cursor:pointer; font-family:inherit; padding:0; margin-left:2px; }
+.switchLink:hover { text-decoration:underline; }
+
+.form { width:100%; display:flex; flex-direction:column; gap:12px; margin-top:4px; }
+.field { display:flex; flex-direction:column; gap:5px; }
+.field label { font-size:12px; color:var(--text2); font-weight:500; }
+.hint { font-size:10px; color:var(--text3); font-weight:400; }
+.field input { padding:11px 14px; background:var(--bg); border:1px solid var(--border); border-radius:10px; color:var(--text); font-size:14px; font-family:'DM Sans',sans-serif; outline:none; transition:border-color .15s; }
+.field input:focus { border-color:var(--accent); box-shadow:0 0 0 2px var(--glow-accent); }
+.field input::placeholder { color:var(--text3); }
+
+.errorBox   { font-size:12px; color:var(--danger); background:var(--glow-red); border:1px solid rgba(248,113,113,.2); border-radius:8px; padding:9px 12px; text-align:center; width:100%; }
+.successBox { font-size:12px; color:var(--success); background:var(--glow-green); border:1px solid rgba(74,222,128,.2); border-radius:8px; padding:9px 12px; text-align:center; width:100%; }
+
+.submitBtn { width:100%; padding:13px; background:var(--accent); color:var(--bg); border:none; border-radius:10px; font-size:14px; font-weight:600; font-family:'DM Sans',sans-serif; transition:all .15s; margin-top:4px; }
+.submitBtn:hover:not(:disabled) { background:var(--accent2); transform:translateY(-1px); box-shadow:0 4px 14px var(--glow-accent); }
+.submitBtn:disabled { opacity:.45; cursor:not-allowed; }
+.footer { font-size:10px; color:var(--text3); text-align:center; margin-top:8px; }

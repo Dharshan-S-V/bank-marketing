@@ -1,0 +1,31 @@
+.header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 20px; height: 52px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(9,9,11,.85);
+  backdrop-filter: blur(12px);
+  flex-shrink: 0; z-index: 50;
+}
+.left   { display:flex; align-items:center; gap:14px; }
+.center { flex:1; display:flex; justify-content:center; }
+.right  { display:flex; align-items:center; gap:10px; }
+
+.logo { font-family:'DM Serif Display',serif; font-size:18px; color:var(--text); letter-spacing:-.3px; display:flex; align-items:center; gap:7px; }
+.logo em { color:var(--accent); font-style:italic; }
+.logoMark { color:var(--accent); font-size:14px; }
+
+.userChip { display:flex; align-items:center; gap:6px; padding:3px 10px; background:var(--surface2); border:1px solid var(--border); border-radius:20px; font-size:11px; color:var(--text2); }
+.chipDot  { width:6px; height:6px; border-radius:50%; background:var(--success); box-shadow:0 0 5px var(--success); }
+
+.ratePill { display:flex; align-items:center; gap:8px; padding:5px 12px; background:var(--surface2); border:1px solid var(--border); border-radius:20px; }
+.rateTrack { width:80px; height:3px; background:var(--border); border-radius:2px; overflow:hidden; }
+.rateFill  { height:100%; border-radius:2px; transition:width .4s ease, background .3s; }
+.rateText  { font-size:10px; font-weight:500; transition:color .3s; white-space:nowrap; }
+
+.iconBtn { width:30px; height:30px; border-radius:var(--r-sm); border:1px solid var(--border); background:transparent; color:var(--text2); display:flex; align-items:center; justify-content:center; transition:all .15s; }
+.iconBtn:hover { border-color:var(--border2); color:var(--text); background:var(--surface2); }
+.logoutBtn { padding:5px 12px; border-radius:var(--r-sm); border:1px solid var(--border); background:transparent; color:var(--text3); font-size:11px; transition:all .15s; }
+.logoutBtn:hover { border-color:var(--danger); color:var(--danger); }
+
+.liveIndicator { display:flex; align-items:center; gap:5px; font-size:10px; color:var(--text3); }
+.liveDot { width:6px; height:6px; border-radius:50%; background:var(--success); animation:pulse 2s infinite; }
