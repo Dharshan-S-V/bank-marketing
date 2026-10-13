@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.DS_Store
+# resumable-training cache: ignored so that a fresh clone really retrains from scratch
+outputs/results/_cache/
+outputs/smoke/

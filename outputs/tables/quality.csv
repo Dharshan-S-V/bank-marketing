@@ -1,0 +1,15 @@
+,column,issue,count,pct
+0,job,'unknown' label,288,0.64
+1,marital,'unknown' label,0,0.0
+2,education,'unknown' label,1857,4.11
+3,default,'unknown' label,0,0.0
+4,housing,'unknown' label,0,0.0
+5,loan,'unknown' label,0,0.0
+6,contact,'unknown' label,13020,28.8
+7,month,'unknown' label,0,0.0
+8,poutcome,'unknown' label,36959,81.75
+9,pdays,sentinel -1 (never contacted),36954,81.74
+10,balance,negative balance (valid overdraft),3766,8.33
+11,duration,zero-second calls,3,0.007
+12,(all),exact duplicate rows,0,0.0
+13,(all),NaN cells,0,0.0
