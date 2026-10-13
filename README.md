@@ -64,8 +64,8 @@ The model beats logistic regression but not gradient boosting, and it is **not**
 
 ## 10. Installation
 ```bash
-git clone https://github.com/<your-username>/bank-marketing-eda-dl.git
-cd bank-marketing-eda-dl
+git clone https://github.com/Dharshan-S-V/bank-marketing.git
+cd bank-marketing
 python -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -r requirements.txt                          # exact tested versions: requirements-lock.txt
 ```
@@ -84,7 +84,7 @@ Training is resumable (per-step cache in `outputs/results/_cache/`, git-ignored)
 
 ## 12. Repository structure
 ```
-bank-marketing-eda-dl/
+bank-marketing/
 |-- README.md, requirements.txt, requirements-lock.txt, .gitignore
 |-- data/ (raw/bank-full.csv, data_dictionary.csv, README.md)
 |-- notebooks/eda_and_modeling.ipynb        executed notebook

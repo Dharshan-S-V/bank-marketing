@@ -1,10 +1,36 @@
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
-.ipynb_checkpoints/
+*.py[cod]
+*$py.class
+
+# Virtual environments
 .venv/
 venv/
+env/
+
+# Environment variables / secrets
 .env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS artifacts
 .DS_Store
-# resumable-training cache: ignored so that a fresh clone really retrains from scratch
+Thumbs.db
+Desktop.ini
+
+# Editor / IDE caches
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Resumable-training cache: ignored so that a fresh clone retrains from scratch
 outputs/results/_cache/
 outputs/smoke/
+
+# Compiled models (too large / regeneratable)
+outputs/models/*.h5
+outputs/models/*.keras
